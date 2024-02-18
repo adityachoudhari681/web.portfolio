@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <script src="portfolio.js"></script>
+  <link rel="stylesheet" href="connect.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Choudhari | Let's Connect</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <link rel="stylesheet" href="styles.css">
+    <nav class="navbar" style="
+    padding-bottom: 8px;
+    padding-top: 8px;
+">
+        <div class="container">
+            <div class="brand">Aditya Choudhari</div>
+            <ul class="nav-links" style="
+            top: 50px;">
+                <li><a  style="font-size: 18px;font-weight:bolder; font-family:'Satisfy',cursive" href="index.html">Home</a></li>
+                <li><a  style="font-size: 18px;font-weight:bolder; font-family:'Satisfy',cursive" href="projects.html">Projects</a></li>
+                <li><a  style="font-size: 18px;font-weight:bolder; font-family:'Satisfy',cursive" href="certificates.html">Certificates</a></li>
+                <li><a style="font-size: 18px;font-weight:bolder; font-family:'Satisfy',cursive"  href="about.html">About me</a></li>
+                <li><a style="font-size: 18px;font-weight:bolder; font-family:'Satisfy',cursive"  href="letsconnect.html">Let's Connect</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line" ></div>
+                <div class="line"></div>
+                <div class="line" ></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Your content goes here -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+    <style>
+        .navbar {
+            background-color: whitesmoke;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Satisfy', cursive;padding-left: 25px;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav-links li a:hover
+        {
+            text-transform:uppercase;
+        }
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer; padding-right: 10px;
+        }
+
+        .line {
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 3px 0;
+            
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                background-color: whitesmoke;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+            }
+
+            .nav-links.active li {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+  
+  <!--Main Content of the Page-->
+  <div class="connect">
+
+    <p class="heading" style="margin-top: 60px;font-family:'satisfy',cursive;"> Let's Connect !</p>
+    <p class="description">
+      Whether you're a potential collaborator, a fellow enthusiast, or someone just looking to connect, I invite you to
+      reach out.
+    </p>
+    <p class="heading_social" style=" font-family:'Satisfy',cursive">Social Media</p>
+    <div class="content_center">
+      <div class="social-icons">
+        <a href="https://github.com/adityachoudhari681" target="_blank" class="icon github"></a>
+        <a href="https://linkedin.com/in/aditya-choudhari-846a3727a" target="_blank" class="icon linkedin"></a>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZZzScSxHkjHQHnfGwchDcXJRqDwFZGpjRfbDQlWWMFwkrxZLXtxpVfhHNZWJgKLHjfqsq"
+          target="_blank" class="icon gmail"></a>
+      </div>
+    </div>
+    <p class="heading_social" style=" font-family:'Satisfy',cursive">Coding Platforms</p>
+    <div class="content_center">
+      <div id="lowericon" class="social-icons">
+        <a class="icon codechef"></a>
+        <a class="icon leetcode"></a>
+        <a class="icon geeksforgeeks"></a>
+      </div>
+    </div>
+    <script>
+      function showAlert() {
+        alert('Redirect link to Coding Platforms will be updated soon!');
+      }
+      var button = document.getElementById('lowericon');
+      button.addEventListener('click', showAlert);
+    </script>
+    <style>
+      .content_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 20px;
+      }
+
+      #lowericon {
+        margin-bottom: 15px;
+      }
+
+      .icon-container {
+        text-align: center;
+      }
+
+      .icon {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .gmail {
+        background-image: url('gmail_logo.png');
+      }
+
+      .github {
+        background-image: url('github_logo.png');
+      }
+
+      .linkedin {
+        background-image: url('linkedin_logo.png');
+      }
+
+      .codechef {
+        background-image: url('codechef_logo.png');
+      }
+
+      .leetcode {
+        background-image: url('leetcode_logo.png');
+      }
+
+      .geeksforgeeks {
+        background-image: url('geeksforgeeks_logo.png');
+      }
+
+      /* Hover effect */
+      .icon:hover {
+        transform: scale(1.2);
+        border: 2px solid grey;
+        border-radius: 5%;
+      }
+    </style>
+    <!--Scroll Button-->
+    <button id="scrollToTopBtn" style="width: 25px;height: 40px; " title="Go to top">&#8593;
+    </button>
+ <!--Footer-->
+ <div class="footer" style="padding-top: 16px;">
+  <div class="content">
+    <div class="services">
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="projects.html">Projects</a></p>
+
+    </div>
+
+    <div class="links">
+
+      <p><a href="certificates.html">Certificates</a></p>
+      <p><a target="_blank" href="share.html">Share Page</a></p>
+      <p><a href="letsconnect.html">Connect</a></p>
+    </div>
+    <div class="social-media">
+      <p>
+        <a target="_blank" href="https://linkedin.com/in/aditya-choudhari-846a3727a"><i class="fab fa-linkedin"></i>
+          LinkedIn</a>
+      </p>
+      <p>
+        <a target="_blank" href="https://github.com/adityachoudhari681"><i class="fab fa-github"></i> Github</a>
+      </p>
+      <p>
+        <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZZzScSxHkjHQHnfGwchDcXJRqDwFZGpjRfbDQlWWMFwkrxZLXtxpVfhHNZWJgKLHjfqsq"><i class="fab fa-google"></i> Mail</a>
+      </p>
+
+    </div>
+  </div>
+  <footer>
+    © 2024-25 Aditya Choudhari, All Rights Reserved .
+  </footer>
+   
+</body>
+
+</html>
