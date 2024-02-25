@@ -151,7 +151,7 @@
       <div class="social-icons">
         <a href="https://github.com/adityachoudhari681" target="_blank" class="icon github"></a>
         <a href="https://linkedin.com/in/aditya-choudhari-846a3727a" target="_blank" class="icon linkedin"></a>
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZZzScSxHkjHQHnfGwchDcXJRqDwFZGpjRfbDQlWWMFwkrxZLXtxpVfhHNZWJgKLHjfqsq"
+        <a onclick="sendEmail()" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZZzScSxHkjHQHnfGwchDcXJRqDwFZGpjRfbDQlWWMFwkrxZLXtxpVfhHNZWJgKLHjfqsq"
           target="_blank" class="icon gmail"></a>
       </div>
     </div>
@@ -255,12 +255,17 @@
       <p>
         <a target="_blank" href="https://github.com/adityachoudhari681"><i class="fab fa-github"></i> Github</a>
       </p>
-      <p>
-        <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZZzScSxHkjHQHnfGwchDcXJRqDwFZGpjRfbDQlWWMFwkrxZLXtxpVfhHNZWJgKLHjfqsq"><i class="fab fa-google"></i> Mail</a>
-      </p>
-
-    </div>
-  </div>
+                    <p>
+                        <a target="_blank" onclick="sendEmail()" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZZzScSxHkjHQHnfGwchDcXJRqDwFZGpjRfbDQlWWMFwkrxZLXtxpVfhHNZWJgKLHjfqsq" ><i class="fab fa-google"></i> Mail</a>
+                    </p>
+                    
+        </div>
+      </div>
+      <script>
+          function sendEmail() {
+            window.location.href = "mailto:choudhariaditya681@gmail.com";
+          }
+      </script>
   <footer>
     © 2024-25 Aditya Choudhari, All Rights Reserved .
   </footer>
